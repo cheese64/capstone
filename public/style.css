@@ -1,0 +1,45 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border: 8pt;
+    border-color: darkslateblue;
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslateblue;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+button {
+    background-color: darkslateblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+button:hover {
+    background-color:rgb(103, 89, 194);
+}
+.container {
+    height: 100px;
+    position: relative;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+b {
+    color: darkslateblue;
+    font-weight: bold;
+}

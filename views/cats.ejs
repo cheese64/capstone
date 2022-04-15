@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Cats</title>
+</head>
+<body>
+    <h1>Random Cat Image</h1>
+    <p><img src="<%= data.url %>"></p>
+    <div class="container">
+        <div class="center">
+            <button id="cats">New Cat</button>
+            <button id="zoo">Zoo Animals</button>
+            <button id="dogs">Dogs</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("zoo").onclick = function () {
+            location.href = "/zoo";
+        };
+        document.getElementById("cats").onclick = function () {
+            location.href = "/cats";
+        };
+        document.getElementById("dogs").onclick = function () {
+            location.href = "/dogs";
+        };
+    </script>
+</body>
+</html>

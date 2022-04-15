@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style.css">
+    <title>Zoo Animals API</title>
+</head>
+<body>
+    <h1><%= data.name %></h1>
+    <p><img src="<%= data.image_link %>"></p>
+    <p><b>Latin Name</b>: <%= data.latin_name %></p>
+    <p><b>Animal Type</b>: <%= data.animal_type %></p>
+    <p><b>Active Time</b>: <%= data.active_time %></p>
+    <p><b>Length</b>: <%= data.length_min %> - <%= data.length_max %> ft.</p>
+    <p><b>Weight</b>: <%= data.weight_min %> - <%= data.weight_max %> lbs.</p>
+    <p><b>Lifespan</b>: <%= data.lifespan %> years</p>
+    <p><b>Habitat</b>: <%= data.habitat %></p>
+    <p><b>Diet</b>: <%= data.diet %></p>
+    <p><b>Location</b>: <%= data.geo_range %></p>
+    <div class="container">
+        <div class="center">
+            <button id="zoo">New Animal</button>
+            <button id="cats">Cats</button>
+            <button id="dogs">Dogs</button>
+        </div>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("zoo").onclick = function () {
+            location.href = "/zoo";
+        };
+        document.getElementById("cats").onclick = function () {
+            location.href = "/cats";
+        };
+        document.getElementById("dogs").onclick = function () {
+            location.href = "/dogs";
+        };
+    </script>
+</body>
+</html>
