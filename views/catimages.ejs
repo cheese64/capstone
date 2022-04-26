@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Images</title>
+</head>
+<body>
+    <div class="nav">
+        <a class="active" href="/">Home</a>
+        <a href="/zooimages">Zoo Animals</a>
+        <a href="/catimages">Cats</a>
+        <a href="/dogimages">Dogs</a>
+        <a href="/zoo">Random Zoo Animal</a>
+        <a href="/cats">Random Cat</a>
+        <a href="/dogs">Random Dog</a>
+    </div>
+    <div class="row">
+        <% for(var i = 0; i < data.length; i++){ %>
+            <div class="column">
+                <a href="/cats/<%= data[i].id %>"><img src="<%= data[i].url %>"></a>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

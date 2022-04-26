@@ -1,8 +1,30 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: FreeMono, monospace;
+}
+.nav {
+    background-color: darkslateblue;
+    overflow: hidden;
+}
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover {
+    background-color: darkslateblue;
+    color: rgb(173, 172, 181);
+}
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    height: 200px;
     border: 8pt;
     border-color: darkslateblue;
 }
@@ -42,4 +64,21 @@ button:hover {
 b {
     color: darkslateblue;
     font-weight: bold;
+}
+.row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    align-items: center;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }

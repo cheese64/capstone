@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/style.css">
-    <title>Zoo Animals API</title>
+    <link rel="stylesheet" href="/style.css"/>
+    <title>Zoo Animals</title>
 </head>
 <body>
+    <div class="nav">
+        <a class="active" href="/">Home</a>
+        <a href="/zooimages">Zoo Animals</a>
+        <a href="/catimages">Cats</a>
+        <a href="/dogimages">Dogs</a>
+        <a href="/zoo">Random Zoo Animal</a>
+        <a href="/cats">Random Cat</a>
+        <a href="/dogs">Random Dog</a>
+    </div>
     <h1><%= data.name %></h1>
     <p><img src="<%= data.image_link %>"></p>
     <p><b>Latin Name</b>: <%= data.latin_name %></p>
@@ -21,19 +30,11 @@
     <div class="container">
         <div class="center">
             <button id="zoo">New Animal</button>
-            <button id="cats">Cats</button>
-            <button id="dogs">Dogs</button>
         </div>
     </div>
     <script type="text/javascript">
         document.getElementById("zoo").onclick = function () {
             location.href = "/zoo";
-        };
-        document.getElementById("cats").onclick = function () {
-            location.href = "/cats";
-        };
-        document.getElementById("dogs").onclick = function () {
-            location.href = "/dogs";
         };
     </script>
 </body>
