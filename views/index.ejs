@@ -8,13 +8,20 @@
 </head>
 <body>
     <div class="nav">
-        <a class="active" href="/">Home</a>
+        <a href="/">Home</a>
         <a href="/zooimages">Zoo Animals</a>
         <a href="/catimages">Cats</a>
         <a href="/dogimages">Dogs</a>
-        <a href="/zoo">Random Zoo Animal</a>
-        <a href="/cats">Random Cat</a>
-        <a href="/dogs">Random Dog</a>
+        <div class="dropdown">
+            <button class="dropbtn">Random &#9660
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/zoo">Zoo Animals</a>
+                <a href="/cats">Cats</a>
+                <a href="/dogs">Dogs</a>
+            </div>
+        </div>
     </div>
     <br><br>
     <h1>Welcome to the Animals Website!</h1>
